@@ -16,6 +16,14 @@ friendBtn.addEventListener('click', () => {
         div.className = "friend"
         //Insert div into body
         body.appendChild(div);
+        //Create h3
+        const h3 = document.createElement('h3');
+        //Add friend as text
+        const h3Text = document.createTextNode(friend);
+        //Add h3Text to h3
+        h3.appendChild(h3Text);
+        //Insert h3 into div
+        div.appendChild(h3);
         // creates loop that counts down from 99
         for (n = 99; n > 0; n--) {
             // assigns minusOne as current loop number - 1
