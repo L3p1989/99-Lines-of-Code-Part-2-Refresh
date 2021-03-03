@@ -1,0 +1,17 @@
+/*Adds black background and white text*/
+body {
+  background-color: black;
+  color: white;
+}
+/*Changes text color of h1 to dark green*/
+h1 {
+  color: darkgreen;
+}
+/*Changes background color of friend div to gray*/
+.friend {
+  background-color: gray;
+}
+/*Changes text for h3 in friend div to uppercase*/
+.friend > h3 {
+  text-transform: uppercase;
+}
