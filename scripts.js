@@ -24,14 +24,20 @@ friendBtn.addEventListener('click', () => {
         h3.appendChild(h3Text);
         //Insert h3 into div
         div.appendChild(h3);
+        //create p
+        const p = document.createElement('p');
+        //give p id of i
+        p.id = i;
+        //insert into div
+        div.appendChild(p);
         // creates loop that counts down from 99
         for (n = 99; n > 0; n--) {
             // assigns minusOne as current loop number - 1
             let minusOne = n - 1;
+            //create song
+            const song = document.createTextNode(`${n} lines of code in the file, ${n} lines of code; I strike one out, clear it all out, ${minusOne} lines of code in the file.`)
             // if loop number is greater than 0 log song in console
-            if (n > 0) {
-                console.log(`"${n} lines of code in the file, ${n} lines of code; ${friend} strikes one out, clears it all out, ${minusOne} lines of code in the file"`);
-            }
+            n > 0 ? document.getElementById(i).appendChild(song) : null
         }
     };
 });
