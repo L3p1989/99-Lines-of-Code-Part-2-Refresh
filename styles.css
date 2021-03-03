@@ -2,16 +2,27 @@
 body {
   background-color: black;
   color: white;
+  text-align: center;
 }
+
 /*Changes text color of h1 to dark green*/
 h1 {
   color: darkgreen;
 }
-/*Changes background color of friend div to gray*/
-.friend {
-  background-color: gray;
-}
+
 /*Changes text for h3 in friend div to uppercase*/
 .friend > h3 {
   text-transform: uppercase;
+}
+
+/*Round corners, dark violet bg-color, give solid black border, white text, cannot highlight*/
+#friendBtn {
+  border-radius: 4px;
+  height: 25px;
+  width: 50px;
+  background-color: darkviolet;
+  border: black, solid, 1px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
 }
